@@ -25,8 +25,17 @@ const BiddingPanel = ({ team, auctionState, formatPrice }) => {
       setIsPlacingBid(false);
       setTimeout(() => setBidError(''), 4000);
     });
-    return () => socket.off('bid:error');
-  }, [socket]);
+    socket.on('bid:update', (data) => {
+      if (data.currentBidder?.id === team?.id) {
+        setBidSuccess(`Bid of ${formatPrice(data.currentBid)} placed!`);
+        setTimeout(() => setBidSuccess(''), 3000);
+      }
+    });
+    return () => {
+      socket.off('bid:error');
+      socket.off('bid:update');
+    };
+  }, [socket, team, formatPrice]);
 
   const placeBid = () => {
     if (!socket || !canBid) return;
@@ -38,9 +47,7 @@ const BiddingPanel = ({ team, auctionState, formatPrice }) => {
       playerId: currentPlayer.id,
       amount: nextBidAmount
     });
-    setBidSuccess(`Bid of ${formatPrice(nextBidAmount)} placed!`);
     setIsPlacingBid(false);
-    setTimeout(() => setBidSuccess(''), 3000);
   };
 
   if (!currentPlayer || !isActive) {
