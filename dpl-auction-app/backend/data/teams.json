@@ -1,0 +1,10 @@
+[
+  {"id": "team-1", "name": "Team Alpha", "budget": 10000000, "remainingBudget": 10000000, "players": [], "maleCount": 0, "femaleCount": 0, "password": "alpha123"},
+  {"id": "team-2", "name": "Team Beta", "budget": 10000000, "remainingBudget": 10000000, "players": [], "maleCount": 0, "femaleCount": 0, "password": "beta123"},
+  {"id": "team-3", "name": "Team Gamma", "budget": 10000000, "remainingBudget": 10000000, "players": [], "maleCount": 0, "femaleCount": 0, "password": "gamma123"},
+  {"id": "team-4", "name": "Team Delta", "budget": 10000000, "remainingBudget": 10000000, "players": [], "maleCount": 0, "femaleCount": 0, "password": "delta123"},
+  {"id": "team-5", "name": "Team Epsilon", "budget": 10000000, "remainingBudget": 10000000, "players": [], "maleCount": 0, "femaleCount": 0, "password": "epsilon123"},
+  {"id": "team-6", "name": "Team Zeta", "budget": 10000000, "remainingBudget": 10000000, "players": [], "maleCount": 0, "femaleCount": 0, "password": "zeta123"},
+  {"id": "team-7", "name": "Team Eta", "budget": 10000000, "remainingBudget": 10000000, "players": [], "maleCount": 0, "femaleCount": 0, "password": "eta123"},
+  {"id": "team-8", "name": "Team Theta", "budget": 10000000, "remainingBudget": 10000000, "players": [], "maleCount": 0, "femaleCount": 0, "password": "theta123"}
+]

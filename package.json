@@ -1,0 +1,11 @@
+{
+  "name": "dpl-auction-app",
+  "version": "1.0.0",
+  "description": "DPL Player Auction Application",
+  "scripts": {
+    "install:all": "cd dpl-auction-app/backend && npm install && cd ../frontend && npm install",
+    "start:backend": "cd dpl-auction-app/backend && npm start",
+    "start:frontend": "cd dpl-auction-app/frontend && npm run dev",
+    "dev": "concurrently \"cd dpl-auction-app/backend && npm run dev\" \"cd dpl-auction-app/frontend && npm run dev\""
+  }
+}
